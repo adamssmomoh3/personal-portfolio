@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>My Personal portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <!-- Menu Buttons -->
+
+        <span class="menu-icons" id="menu-open"
+          ><i class="fas fa-bars"></i
+        ></span>
+
+        <!-- Navigation Menu -->
+        <ul id="nav-links">
+          <li class="home">
+            <a href="index.html" class="active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fas fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+          </li>
+          <li class="contact">
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <span class="menu-icons" id="menu-close"
+          ><i class="fas fa-times"></i
+        ></span>
+      </nav>
+    </header>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <section class="section">
+      <!-- Welcome Section -->
+      <h1>I’m Adams S <span class="span">Momoh</span></h1>
+      <p>
+        It’s a wonderful journey into my personal life. <br />
+        A journey that’s sometimes stressful yet joyful. Follow me as we dive
+        along.
+      </p>
+      <a href="#">DOWNLOAD CV</a>
+
+      <p class="add">
+        You can reach out to me on my social media:
+        <a href="https://facebook.com/yourprofile" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <div class="images">
+        <img src="images/shape.svg" class="other" />
+        <img src="images/my img.png" class="shape" />
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+        const nav = document.querySelector(".nav");
+
+        // Show menu and close icon
+        menuOpen.addEventListener("click", () => {
+          nav.classList.add("open");
+        });
+
+        // Hide menu and show open icon
+        menuClose.addEventListener("click", () => {
+          nav.classList.remove("open");
+        });
+      });
+
+      // moving link area
+
+      document.addEventListener("click", function () {
+        const homeElement = document.querySelector(".home");
+        homeElement.classList.toggle("active"); // Add or remove the "active" class
+      });
+    </script>
+  </body>
+</html>

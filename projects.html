@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>My Personal portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <!-- Menu Buttons -->
+
+        <span class="menu-icons" id="menu-open"
+          ><i class="fas fa-bars"></i
+        ></span>
+
+        <!-- Navigation Menu -->
+        <ul id="nav-links">
+          <li class="home">
+            <a href="index.html" class="active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="projects.html" class="active"
+              ><i class="fas fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+          </li>
+          <li class="contact">
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <span class="menu-icons" id="menu-close"
+          ><i class="fas fa-times"></i
+        ></span>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <!-- Projects -->
+      <h2>Projects</h2>
+      <div class="project Christmas">
+        <h3>Project 1: Christmas-Themed Website</h3>
+        <p>
+          A festive website with snowfall effects and interactive features,
+          designed to engage visitors during the holiday season.
+        </p>
+        <a href="christmas-website-link.html" target="_blank">View Project</a>
+      </div>
+      <div class="project YouTube">
+        <h3>Project 2: YouTube Layout Exercise</h3>
+        <p>
+          A practice project inspired by SuperSimple Dev, focusing on
+          replicating a YouTube-like layout using HTML and CSS.
+        </p>
+        <a href="youtube-project-link.html" target="_blank">View Project</a>
+      </div>
+      <div class="project proj">
+        <h3>Upcoming Project: JavaScript Interactive Quiz</h3>
+        <p>
+          A fun, interactive quiz application built with JavaScript to practice
+          DOM manipulation and event handling.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+        const nav = document.querySelector(".nav");
+
+        // Show menu and close icon
+        menuOpen.addEventListener("click", () => {
+          nav.classList.add("open");
+        });
+
+        // Hide menu and show open icon
+        menuClose.addEventListener("click", () => {
+          nav.classList.remove("open");
+        });
+      });
+    </script>
+  </body>
+</html>
