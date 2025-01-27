@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>My Personal portfolio</title>
+  </head>
+  <body>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <!-- Menu Buttons -->
+
+        <span class="menu-icons" id="menu-open"
+          ><i class="fas fa-bars"></i
+        ></span>
+
+        <!-- Navigation Menu -->
+        <ul id="nav-links">
+          <li class="home">
+            <a href="index.html" class="active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="projects.html" class="active"
+              ><i class="fas fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+          </li>
+          <li class="contact">
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <span class="menu-icons" id="menu-close"
+          ><i class="fas fa-times"></i
+        ></span>
+      </nav>
+    </header>
+    </header>
+    
+    
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I'd love to hear from you! Whether it's a question, collaboration, or just to say hi, feel free to reach out.
+      </p>
+    
+      <!-- Contact Form -->
+      <form
+        action="https://formsubmit.co/adamssmomoh89@gmail.com"
+        method="POST"
+        class="form"
+      >
+        <!-- Add a honeypot field to prevent spam -->
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+    
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+    
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+    
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Your Message"
+          required
+        ></textarea>
+    
+        <button type="submit">Send</button>
+      </form>
+    
+      <!-- Contact Details -->
+      <p>You can also reach me at:</p>
+      <ul>
+        <li>Email: <a href="mailto:adamssmomoh89@gmail.com">adamssmomoh89@gmail.com</a></li>
+        <li>Location: Kono District, Sierra Leone</li>
+      </ul>
+    
+      <!-- Google Map -->
+      <h3>Find Me on the Map</h3>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12657.374290964376!2d-10.97002985!3d8.64388565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0063da7f2cc3c1%3A0x92c684c2f4d21868!2sKono%20District%2C%20Sierra%20Leone!5e0!3m2!1sen!2ssl!4v1674849530955!5m2!1sen!2ssl"
+          width="100%"
+          height="300"
+          style="border: 0; border-radius: 10px; margin-top: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a
+          href="https://www.tiktok.com/?kuid=3919cf38-9efb-43bc-b620-d9ab0df56eaf-1729036800&kref=https%253A%252F%252Fproductivitystacks.com%252Freal-estate-agent-denise-schroder%252F"
+          target="_blank"
+          >TikTok</a
+        >
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div>
+        <p>
+          Contact me on all online platforms. You can also reach out to me on Google Maps.
+        </p>
+        <ul>
+          <li>WhatsApp Number: +232-339-026-12</li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script>
+   document.addEventListener("DOMContentLoaded", () => {
+      const menuOpen = document.getElementById("menu-open");
+      const menuClose = document.getElementById("menu-close");
+      const nav = document.querySelector(".nav");
+
+      // Show menu and close icon
+      menuOpen.addEventListener("click", () => {
+        nav.classList.add("open");
+      });
+
+      // Hide menu and show open icon
+      menuClose.addEventListener("click", () => {
+        nav.classList.remove("open");
+      });
+    });
+
+
+  </script>
+  </body>
+</html>
