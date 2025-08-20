@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adams S Momoh - Web Developer Portfolio showcasing skills, projects and experience from Sierra Leone">
+    <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, Sierra Leone, frontend developer">
+    <meta name="author" content="Adams S Momoh">
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
-    <title>My Personal portfolio</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <title>Adams S Momoh - Web Developer Portfolio</title>
   </head>
   <body>
     <header>
       <nav class="nav">
         <!-- Menu Buttons -->
-
         <span class="menu-icons" id="menu-open"
           ><i class="fas fa-bars"></i
         ></span>
@@ -47,18 +48,21 @@
             <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
           </li>
         </ul>
-        <span class="menu-icons" id="menu-close"
-          ><i class="fas fa-times"></i
-        ></span>
+        
+        <!-- Theme Toggle and Close Button -->
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <span class="menu-icons" id="menu-close"
+            ><i class="fas fa-times"></i
+          ></span>
+        </div>
       </nav>
     </header>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
-    <section class="section">
+    <main>
+      <section class="section hero">
       <!-- Welcome Section -->
       <h1>I’m Adams S <span class="span">Momoh</span></h1>
       <p>
@@ -66,7 +70,10 @@
         A journey that’s sometimes stressful yet joyful. Follow me as we dive
         along.
       </p>
-      <a href="#">DOWNLOAD CV</a>
+      <div class="cta-buttons">
+        <a href="cv/index.html" class="btn btn-primary">VIEW MY CV</a>
+        <a href="projects.html" class="btn btn-secondary">SEE MY WORK</a>
+      </div>
 
       <p class="add">
         You can reach out to me on my social media:
@@ -89,31 +96,9 @@
         <img src="images/my img.png" class="shape" />
       </div>
     </section>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuOpen = document.getElementById("menu-open");
-        const menuClose = document.getElementById("menu-close");
-        const nav = document.querySelector(".nav");
-
-        // Show menu and close icon
-        menuOpen.addEventListener("click", () => {
-          nav.classList.add("open");
-        });
-
-        // Hide menu and show open icon
-        menuClose.addEventListener("click", () => {
-          nav.classList.remove("open");
-        });
-      });
-
-      // moving link area
-
-      document.addEventListener("click", function () {
-        const homeElement = document.querySelector(".home");
-        homeElement.classList.toggle("active"); // Add or remove the "active" class
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adams S Momoh - Professional CV and Resume">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Adams S Momoh - CV</title>
+    <style>
+        .cv-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .cv-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #007bff;
+        }
+        .cv-section {
+            margin-bottom: 2rem;
+        }
+        .cv-section h3 {
+            color: #007bff;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        @media print {
+            .back-btn, .download-btn { display: none; }
+            .cv-container { box-shadow: none; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+        
+        <div class="cv-header">
+            <h1>Adams S Momoh</h1>
+            <h2>Web Developer & Creative Storyteller</h2>
+            <p>
+                <i class="fas fa-envelope"></i> adamssmomoh89@gmail.com | 
+                <i class="fas fa-phone"></i> +232-339-026-12 | 
+                <i class="fas fa-map-marker-alt"></i> Kono District, Sierra Leone
+            </p>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-user"></i> Professional Summary</h3>
+            <p>
+                Passionate web developer from Sierra Leone with a strong foundation in HTML, CSS, and JavaScript. 
+                Currently expanding skills in modern web technologies like React and Node.js. Dedicated to creating 
+                beautiful, functional websites that blend aesthetics with functionality. Beyond coding, I enjoy 
+                creating educational content and stories that celebrate Sierra Leone's rich cultural heritage.
+            </p>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="education-item">
+                <h4>WASSCE (West African Senior School Certificate Examination)</h4>
+                <p class="date">Koidu Secondary School</p>
+                <p>Completed senior secondary education with focus on academic excellence.</p>
+            </div>
+            <div class="education-item">
+                <h4>BECE (Basic Education Certificate Examination)</h4>
+                <p class="date">Koidu Secondary School</p>
+                <p>Successfully completed junior secondary education.</p>
+            </div>
+            <div class="education-item">
+                <h4>Primary Education</h4>
+                <p class="date">F A W A Primary School, Baptist Primary School, First Baptist Primary School</p>
+                <p>Strong foundation in core subjects, completed NPSE examination.</p>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-code"></i> Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Frontend Development</h4>
+                    <ul>
+                        <li>HTML5 (90%)</li>
+                        <li>CSS3 (85%)</li>
+                        <li>JavaScript (Learning)</li>
+                        <li>Responsive Design (80%)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Git & GitHub (75%)</li>
+                        <li>Visual Studio Code (70%)</li>
+                        <li>FreeCodeCamp Certified</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Currently Learning</h4>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Advanced JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-project-diagram"></i> Projects</h3>
+            <div class="experience-item">
+                <h4>Christmas-Themed Website</h4>
+                <p>A festive website featuring snowfall effects and interactive elements designed to engage visitors during the holiday season.</p>
+            </div>
+            <div class="experience-item">
+                <h4>YouTube Layout Exercise</h4>
+                <p>Practice project replicating a YouTube-like layout using HTML and CSS, inspired by SuperSimple Dev tutorials.</p>
+            </div>
+            <div class="experience-item">
+                <h4>Personal Portfolio Website</h4>
+                <p>Comprehensive portfolio showcasing skills, projects, and personal journey as a web developer.</p>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-heart"></i> Personal Interests</h3>
+            <ul>
+                <li><strong>Storytelling:</strong> Creating educational stories for children about Sierra Leone's rich history and culture</li>
+                <li><strong>Sports:</strong> Football enthusiast and regular player</li>
+                <li><strong>Family:</strong> Spending quality time with family and community</li>
+                <li><strong>Cultural Preservation:</strong> Passionate about sharing Sierra Leone's heritage through digital media</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h3><i class="fas fa-lightbulb"></i> Goals & Aspirations</h3>
+            <p>
+                To become a skilled full-stack developer capable of creating impactful web applications that serve my community. 
+                I aim to blend my technical skills with my passion for storytelling to create digital experiences that educate, 
+                entertain, and preserve Sierra Leone's cultural heritage for future generations.
+            </p>
+        </div>
+
+        <div class="download-btn">
+            <button onclick="window.print()" class="btn btn-primary">
+                <i class="fas fa-download"></i> Download/Print CV
+            </button>
+        </div>
+    </div>
+</body>
+</html>
